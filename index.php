@@ -147,7 +147,7 @@ require_once 'includes/header.php';
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/4.png"><img class="img-fluid" src="assets/img/thumbnails/4.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/4.PNG"><img class="img-fluid" src="assets/img/thumbnails/4.PNG">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Category</span></div>
