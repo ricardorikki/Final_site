@@ -63,7 +63,7 @@ require_once 'db/conn.php';
   
     </form></div>
     </div>
-</div><!--Form Div closing
+</div><!--Form Div 
 </section>
 -->
 
