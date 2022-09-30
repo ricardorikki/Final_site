@@ -55,4 +55,3 @@ require_once 'includes/auth_check.php';
     </div>   
 
 
-<?php require_once 'includes/footer.php'; ?>
