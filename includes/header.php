@@ -29,7 +29,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+                    
                     <li class="nav-item"><a class="nav-link" href="register.php">Conference 2022</a></li>
                     <li class="nav-item"><a class="nav-link" href="viewrecords.php">View Records</a></li>
 
