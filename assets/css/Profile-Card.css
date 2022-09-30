@@ -7,3 +7,18 @@
   border-top-right-radius: 4px;
 }
 
+.form1{
+    
+  border-radius: 1000px;
+  padding-top: 150px;
+  padding-right: 330px;
+  padding-bottom: 0px;
+  padding-left: 330px;
+}
+
+.form{
+    
+    
+  clear: both;
+
+}

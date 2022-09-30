@@ -1,9 +1,34 @@
-<?php $title = "Login";
-require_once 'includes/header.php'; 
-//require_once 'db/conn.php';
+<br/>
+<br/>
+<br/><?php
+    $title = 'User Login'; 
+
+    require_once 'includes/header.php'; 
+    require_once 'db/conn.php'; 
+    
+    //If data was submitted via a form POST request, then...
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $username = strtolower(trim($_POST['username']));
+        $password = $_POST['password'];
+        $new_password = md5($password.$username);
+
+        $result = $user->getUser($username,$new_password);
+        
+        
+        if(!$result){
+            echo '<div class="alert alert-danger">Username or Password is incorrect! Please try again. </div>';
+        }else{
+            $_SESSION['username'] = $username;
+            $_SESSION['userid'] = $result['id'];
+            header("Location: viewrecords.php");
+        }
+
+    }
 ?>
 
-
+<br/>
+<br/>
+<br/>
     <div class="container" style="position:absolute; left:0; right:0; top: 50%; transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%);">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9 col-xl-9 col-xxl-7">
@@ -15,24 +40,29 @@ require_once 'includes/header.php';
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Welcome Back!</h4>
                                     </div>
-                                    <form class="user">
-                                        <div class="mb-3"><input class="form-control form-control-user" type="email" id="email" aria-describedby="emailHelp" placeholder="Enter Email Address" name="email" required=""></div>
+                                    <form  action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+                                        <div class="mb-3"><input type="text" name="username" placeholder="Username"class="form-control" id="username" value="<?php //if($_SERVER['REQUEST_METHOD'] == 'POST') echo $_POST['username']; ?>"></div>
                                         <div class="mb-3"><input class="form-control form-control-user" type="password" placeholder="Password" name="password" required=""></div>
                                         <div class="row mb-3">
                                             <p id="errorMsg" class="text-danger" style="display:none;">Paragraph</p>
-                                        </div><button class="btn btn-primary d-block btn-user w-100" id="submitBtn" type="submit">Login</button>
-                                        <hr>
+                                            
+                                        </div><button class="btn btn-primary d-block btn-user w-100"  type="submit">Login</button>
+                                        <hr> 
+
+                    
                                     </form>
-                                    <div class="text-center"><a class="small" href="forgot-password.html">Forgot Password?</a></div>
-                                    <div class="text-center"><a class="small" href="register.html">Create an Account!</a></div>
+                                    <div class="text-center"><a class="small" href="#">Forgot Password?</a></div>
+                                    <div class="text-center"><a class="small" href="#">Create an Account!</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><script>
-	let email = document.getElementById("email")
+        </div>
+    </div>   
+        <script>
+	/* let email = document.getElementById("email")
 	let submitBtn = document.getElementById("submitBtn")
 	let errorMsg = document.getElementById('errorMsg')
 
@@ -54,6 +84,6 @@ require_once 'includes/header.php';
 			hideErrorMsg()
 		else
 			displayErrorMsg("Invalid email")
-	});
+	}); */
 
-   
+    <?php include_once 'includes/footer.php'?>

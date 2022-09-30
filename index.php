@@ -1,6 +1,6 @@
 <?php $title = "Home";
 require_once 'includes/header.php'; 
-//require_once 'db/conn.php';
+require_once 'db/conn.php';
 ?>
 
 <!--  <header class="text-center text-white d-flex masthead" style="background: url(&quot;assets/img/Screen%20Shot%202022-09-28%20at%2011.57.26%20AM.png&quot;) top / contain round;">
@@ -22,13 +22,19 @@ require_once 'includes/header.php';
     <div class="row h-100 align-items-center">
       <div class="col-12 text-center">
       <h1 class="text-uppercase"><strong>Ricardo knight</strong></h1>
-        <p class="lead">A great starter layout for a landing page</p>
+        <p class="lead">Technology Specialist</p>
       </div>
     </div>
   </div>
 </header>
 
 
+      
+            
+            		
+            
+ 			
+    
     <section id="about" class="bg-primary">
         <div class="container">
             <div class="row">
@@ -51,10 +57,9 @@ require_once 'includes/header.php';
             </div>
             </div>
         </div>
-    </section>				
-    
-    
-   
+    </section>	
+  <a href="register.php"><img src="assets/img/register.png" alt="HTML tutorial" style="width:100%;height:100%;"></a>
+		
    <!--  <section class="photo-gallery py-4 py-xl-5">
         <div class="container">
             <div class="row mb-5">

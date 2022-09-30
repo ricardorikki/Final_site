@@ -1,3 +1,4 @@
+<?php include_once 'includes/session.php';?>
 <!DOCTYPE html>
 <html>
 
@@ -12,12 +13,12 @@
     <link rel="stylesheet" href="assets/css/-Login-form-Page-BS4--Login-form-Page-BS4.css">
     <link rel="stylesheet" href="assets/css/Animated-Toggle-NavBar-BS5-V2.css">
     <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark-icons.css">
     <link rel="stylesheet" href="/assets/css/untitled.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  
  
 </head>
 
@@ -29,7 +30,21 @@
                     <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.php">Conference 2022</a></li>
+                    <li class="nav-item"><a class="nav-link" href="viewrecords.php">View Records</a></li>
+
+<?php 
+              if(!isset($_SESSION['userid'])){
+          ?>
+            <a class="nav-item nav-link" href="login.php">Login <span class="sr-only"></span></a>
+          <?php } else { ?>
+            
+            <a class="nav-item nav-link" href="logout.php">Logout <span class="sr-only"></span></a>
+          <?php } ?>
                 </ul>
-            </div>
+               
         </div>
+            </div>
+        </div> 
+          
     </nav>
