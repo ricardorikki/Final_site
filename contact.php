@@ -24,9 +24,9 @@ include 'mail.php';
 								<div class="contact-wrap w-100 p-md-5 p-4">
 									<h3 class="mb-4">Get in touch</h3>
 									<div id="form-message-warning" class="mb-4"></div> 
-				      		<div id="form-message-success" class="mb-4">
+				      		<!-- <div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
-				      		</div>
+				      		</div> -->
 									<form  id="contact" action="" method="POST" name="contactForm">
 										<div class="row">
 											<div class="col-md-6">
@@ -50,12 +50,14 @@ include 'mail.php';
 												</div>
 											</div>
 											 <!-- Error display -->
-        <div>
-         <p class="success"> <?php echo $success;  ?> </p>
-         <p class="failed"> <?php echo $failed;  ?> </p>
-        </div>
+												<div>
+												<p class="success"> <?php echo $success;  ?> </p>
+												<p class="failed"> <?php echo $failed;  ?> </p>
+												</div>
 											<div class="col-md-12">
 												<div class="form-group">
+												<button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
+      
 													<input type="submit" name="submit" value="Send Message" class="btn btn-primary">
 													<div class="submitting"></div>
 												</div>
