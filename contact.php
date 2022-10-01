@@ -27,7 +27,7 @@ include 'mail.php';
 				      		<div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
 				      		</div>
-									<form  id="contactForm" name="contactForm">
+									<form  id="contact" action="" method="POST" name="contactForm">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
@@ -49,6 +49,11 @@ include 'mail.php';
 													<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
 												</div>
 											</div>
+											 <!-- Error display -->
+        <div>
+         <p class="success"> <?php echo $success;  ?> </p>
+         <p class="failed"> <?php echo $failed;  ?> </p>
+        </div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<input type="submit" value="Send Message" class="btn btn-primary">
