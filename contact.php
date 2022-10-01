@@ -7,6 +7,7 @@ include 'mail.php';
  //$results = $crud->getAttendees();
 ?>
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="assets/css/style.css">
  
 	<section class="ftco-section">
