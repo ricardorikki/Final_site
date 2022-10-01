@@ -22,18 +22,13 @@ require_once 'db/conn.php';
     <div class="row h-100 align-items-center">
       <div class="col-12 text-center">
       <h1 class="text-uppercase"><strong>Ricardo knight</strong></h1>
-        <p class="lead">Technology Specialist</p>
+        <h3>Technology Specialist</h3>
       </div>
     </div>
   </div>
 </header>
 
 
-      
-            
-            		
-            
- 			
     
     <section id="about" class="bg-primary">
         <div class="container">

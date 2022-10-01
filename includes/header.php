@@ -18,7 +18,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-  
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
  
 </head>
 
@@ -29,9 +33,8 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                     
-                    <li class="nav-item"><a class="nav-link" href="register.php">Conference 2022</a></li>
-                    <li class="nav-item"><a class="nav-link" href="viewrecords.php">View Records</a></li>
 
 <?php 
               if(!isset($_SESSION['userid'])){
@@ -39,6 +42,7 @@
             <a class="nav-item nav-link" href="login.php">Login <span class="sr-only"></span></a>
           <?php } else { ?>
             
+            <a class="nav-item nav-link" href="viewrecords.php">View Records <span class="sr-only"></span></a>
             <a class="nav-item nav-link" href="logout.php">Logout <span class="sr-only"></span></a>
           <?php } ?>
                 </ul>
