@@ -27,7 +27,7 @@ include 'mail.php';
 				      		<div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
 				      		</div>
-									<form action="mail.php" method="POST" id="contactForm" name="contactForm">
+									<form  id="contactForm" name="contactForm">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">

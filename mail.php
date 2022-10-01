@@ -1,38 +1,40 @@
-<?php
 
-if(isset($_POST['submit'])){
+<?php  
+if( isset($_POST['submit']) ) {
+//getting user data
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
-
-$mailTo = "ricardo.o.knight@gmail.com";
-$mailheader = "From:".$name."<".$email.">\r\n";
-
-
-}
-mail($mailTo, $subject, $message, $mailheader) ;
-
-echo'
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact form</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Thank you for contacting me. I will get back to you as soon as possible!</h1>
-        <p class="back">Go back to the <a href="index.html">homepage</a>.</p>
-        
-    </div>
-</body>
-</html>
+ 
+//Recipient email, Replace with your email Address
+$mailTo = 'ricardo.o.knight@hotmail.com';
+ 
+//email subject
+$subject = ' A New Message Received From ' .$firstName;
+ 
+//email message body
+$htmlContent = '<h2> Email Request Received </h2>
+<p> <b>Client Name: </b> '.$name. '</p>
+<p> <b>Email: </b> '.$email .'</p>
+<p> <b>Subject: </b> '.$subject .'</p>
+<p> <b>Date of Birth: </b> '.$message .'</p>
 ';
-
-
+ 
+//header for sender info
+$headers = "From: " .$name . "<". $email . ">";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+ 
+//PHP mailer function
+ $result = mail($mailTo, $subject, $htmlContent, $headers);
+ 
+   //error checking
+   if($result) {
+    $success = "The message was sent successfully!";
+   } else {
+    $failed = "Error: Message was not sent, Try again Later";
+   }
+}
+ 
 ?>
