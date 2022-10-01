@@ -7,7 +7,8 @@ include 'mail.php';
  //$results = $crud->getAttendees();
 ?>
 
-
+<link rel="stylesheet" href="assets/css/style.css">
+ 
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
