@@ -5,6 +5,8 @@ include 'mail.php';
 //require_once 'includes/auth_check.php';
  // Get all attendees
  //$results = $crud->getAttendees();
+ $To = "ricardo.o.knight@gmail.com";
+ $subject = "HTML email";
 ?>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

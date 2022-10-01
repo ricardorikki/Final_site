@@ -8,26 +8,24 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
  
 //Recipient email, Replace with your email Address
-$mailTo = 'ricardo.o.knight@gmail.com';
+$To = 'ricardo.o.knight@gmail.com';
  
 //email subject
-$subject = ' A New Message Received From ' .$firstName;
+$subject = ' A New Message Received From ' .$name;
  
 //email message body
 $htmlContent = '<h2> Email Request Received </h2>
 <p> <b>Client Name: </b> '.$name. '</p>
-<p> <b>Email: </b> '.$email .'</p>
-<p> <b>Subject: </b> '.$subject .'</p>
-<p> <b>Date of Birth: </b> '.$message .'</p>
+<p> <b>Email: </b> '.$email.'</p>
+<p> <b>Subject: </b> '.$subject.'</p>
+<p> <b>Date of Birth: </b> '.$message.'</p>
 ';
  
 //header for sender info
-$headers = "From: " .$name . "<". $email . ">";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
- 
+$headers .= "From: " .$name. "<".$email. ">";
+
 //PHP mailer function
- $result = mail($mailTo, $subject, $htmlContent, $headers);
+ $result = mail($To, $subject, $htmlContent, $headers);
  
    //error checking
    if($result) {
