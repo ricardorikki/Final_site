@@ -5,8 +5,7 @@ include 'mail.php';
 //require_once 'includes/auth_check.php';
  // Get all attendees
  //$results = $crud->getAttendees();
- $To = "ricardo.o.knight@gmail.com";
- $subject = "HTML email";
+
 ?>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +29,7 @@ include 'mail.php';
 				      		<!-- <div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
 				      		</div> -->
-									<form  id="contact" action="" method="POST" name="contactForm">
+									<form  id="contact" action="https://formbold.com/s/9mqR9" method="POST" name="contactForm">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
