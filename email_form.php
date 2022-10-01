@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['email'])) {
-$email_to = "ricardo.o.knight@gmail.com";
+$email_to = "ricardoblingbling@gmail.com";
 $email_subject = "Summarized propose of the email";
 //Errors to show if there is a problem in form fields.
 function died($error) {
