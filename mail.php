@@ -8,7 +8,7 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
  
 //Recipient email, Replace with your email Address
-$mailTo = 'ricardo.o.knight@hotmail.com';
+$mailTo = 'ricardo.o.knight@gmail.com';
  
 //email subject
 $subject = ' A New Message Received From ' .$firstName;
