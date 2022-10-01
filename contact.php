@@ -1,5 +1,6 @@
 <?php $title = "Contact";
 require_once 'includes/header.php'; 
+include 'mail.php';
 //require_once 'db/conn.php';
 //require_once 'includes/auth_check.php';
  // Get all attendees
@@ -25,7 +26,7 @@ require_once 'includes/header.php';
 				      		<div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
 				      		</div>
-									<form action="mail.php"method="POST" id="contactForm" name="contactForm">
+									<form action="mail.php" method="POST" id="contactForm" name="contactForm">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
