@@ -1,6 +1,6 @@
 <?php $title = "Contact";
 require_once 'includes/header.php'; 
-include 'mail.php';
+//include 'mail.php';
 //require_once 'db/conn.php';
 //require_once 'includes/auth_check.php';
  // Get all attendees
@@ -51,11 +51,7 @@ include 'mail.php';
 													<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
 												</div>
 											</div>
-											 <!-- Error display -->
-												<div>
-												<p class="success"> <?php echo $success;  ?> </p>
-												<p class="failed"> <?php echo $failed;  ?> </p>
-												</div>
+											 
 											<div class="col-md-12">
 												<div class="form-group">
       
