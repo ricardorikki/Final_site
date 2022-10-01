@@ -25,7 +25,7 @@ require_once 'includes/header.php';
 				      		<div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
 				      		</div>
-									<form method="POST" id="contactForm" name="contactForm">
+									<form action="mail.php"method="POST" id="contactForm" name="contactForm">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">

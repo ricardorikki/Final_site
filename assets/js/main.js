@@ -33,7 +33,7 @@
 
 					$.ajax({   	
 				      type: "POST",
-				      url: "php/sendEmail.php",
+				      url: "/sendEmail.php",
 				      data: $(form).serialize(),
 
 				      beforeSend: function() { 
@@ -70,7 +70,7 @@
 			            }
 				      },
 				      error: function() {
-				      	$('#form-message-warning').html("Something went wrong. Please try again.");
+				      	$('#form-message-warning').html("Something went wrong. now.");
 				         $('#form-message-warning').fadeIn();
 				         $submit.css('display', 'none');
 				      }
