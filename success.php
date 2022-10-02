@@ -26,10 +26,16 @@ $isSuccecc = $crud->insertAttendee($fname,$lname,$dob,$email,$contact,$specialty
 
 
   if ($isSuccecc){
-      //SendEmail::SendMail($email,'Your registration is successful','We look forward to seeing you!!');
+     // SendEmail::SendMail($email,'Your registration is successful','We look forward to seeing you!!');
+echo'<br>';
+echo'<br>';
+
       include 'includes/successmessage.php';
       }
     else{
+      echo'<br>';
+echo'<br>';
+
      include 'includes/errormessage.php';
   }
 }
@@ -37,24 +43,31 @@ $isSuccecc = $crud->insertAttendee($fname,$lname,$dob,$email,$contact,$specialty
 ?>
 
 <br/>
-<h3 class="text-center">Thanks for Registering</h3>
-<p class="text-center">In the coming days you will be getting a series of emails from us indicating your next steps.</p>
 
-<div class="center" style="padding: 50px;">
-<div class="card" style="width: 54rem;">
+
+<style>
+      img {
+        width: 250px;
+        -webkit-filter: drop-shadow(5px 5px 5px #666666);
+        filter: drop-shadow(5px 5px 5px #666666);
+        
+      }
+    </style>
+
+
+
+<h3 class="text-center">Thank you for Registering</h3>
+<p class="text-center">We look forward to seeing you!</p>
+
+<div class="container d-flex align-items-center justify-content-center">
+<div class="card" style="width: 34rem;">
   <div class="card-body">
 
-  <!--Get-->
-   <!-- <h5 class="card-title"><?php //echo $_GET['FirstName'].' '. $_GET['LastName']; ?></h5>
-    <h6 class="card-subtitle mb-2 text-muted"><?php //echo 'Date of Birth is: '.$_GET['dob'];?></h6>
-    <h6 class="card-subtitle mb-2 text-muted"><?php //echo 'Specialty is: '.$_GET['specialty'];?></h6>
-    <h6 class="card-subtitle mb-2 text-muted"><?php //echo 'Email Address is: '.$_GET['email'];?></h6>
-    <h6 class="card-subtitle mb-2 text-muted"><?php //echo 'Telephone Number is: '.$_GET['contact'];?></h6>
 
--->
 
-<img src="<?php echo $destination; ?>" class="rounded-circle" style="width: 120px; height: 120px" />
-<div class="card-body">
+<div class="card-body "><img src="<?php echo $destination; ?>" class="rounded-circle d-flex align-items-center" style="width: 170px; height: 170px" />
+<br>
+
     <h5 class="card-title"><?php echo $_POST['FirstName'].' '. $_POST['LastName']; ?></h5>
     <h6 class="card-subtitle mb-2 text-muted"><?php echo 'Date of Birth is: '.$_POST['dob'];?></h6>
     <h6 class="card-subtitle mb-2 text-muted"><?php echo 'Specialty is: '.$specialtyName['name'];?></h6>
@@ -64,12 +77,12 @@ $isSuccecc = $crud->insertAttendee($fname,$lname,$dob,$email,$contact,$specialty
 </div>
 
 </div>
+</div>
+
+</div>
 
 
 
 
-
-
-
-<?php require_once'includes/footer.php'; ?>
+<?php echo'<br>'; require_once 'includes/footer.php'; ?>
 
