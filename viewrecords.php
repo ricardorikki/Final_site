@@ -5,11 +5,8 @@ require_once 'includes/auth_check.php';
  // Get all attendees
  $results = $crud->getAttendees();
 ?>
-<br>
-<br>
-<br>
-<br>
- <div class="container" style="position:absolute; left:0; right:0; top: 900px; transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%);">
+
+ <div class="container" >
         <div class="row justify-content-center">
             
                 <div class="card shadow-lg o-hidden border-0 my-5">
@@ -17,8 +14,8 @@ require_once 'includes/auth_check.php';
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="p-5">
-                                <div class="text-center">
-                                        <h4 class="text-dark mb-4">Confirmed Attendees</h4>
+                                <div class="text-center"><br><br>
+                                     <h4 class="text-dark mb-4">Confirmed Attendees</h4>
                                     </div>
   <div class="table-responsive-sm"> 
 

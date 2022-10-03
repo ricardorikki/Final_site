@@ -46,6 +46,9 @@
         <div class="form-group">
             <label style="color: teal;font-weight: 500;" for="firstname">First Name</label>
             <input type="text" class="form-control" value="<?php echo $attendee['firstname'] ?>" id="firstname" name="firstname">
+
+
+            
         </div>
         <div class="form-group">
             <label style="color: teal;font-weight: 500;" for="lastname">Last Name</label>
