@@ -1,4 +1,6 @@
-jQuery(document).ready(function($) {
+
+  
+  jQuery(document).ready(function($) {
     var animationDelay = 2500,
         barAnimationDelay = 3800,
         barWaiting = barAnimationDelay - 3e3,

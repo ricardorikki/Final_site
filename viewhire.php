@@ -12,15 +12,8 @@
     } else{
         $id = $_GET['id'];
         $result = $crud->getHireDetails($id);
-    
-    
 ?>
  <link rel="stylesheet" href="assets/css/view.css">
-
-
-
-
-
 
 <aside class="profile-card">
 <header>
@@ -40,9 +33,9 @@
 
   <!-- some social links to show off -->
   <center> <a href="viewhirerecord.php"class="btn btn-info" role="button" aria-pressed="true">Back</a>
-        <!-- <a href="edit.php?id=<?php //echo $result['attendee_id'] ?>" class="btn btn-warning">Edit</a>
-        <a onclick="return confirm('Are you sure you want to delete this record?');" href="delete.php?id=<?php //echo $result['attendee_id'] ?>" class="btn btn-danger">Delete</a>
-    --> </center>
+        <!-- <a href="edit.php?id=<?php //echo $result['attendee_id'] ?>" class="btn btn-warning">Edit</a> -->
+        <a onclick="return confirm('Are you sure you want to delete this record?');" href="deletehire.php?id=<?php echo $result['hire_id'] ?>" class="btn btn-danger">Delete</a>
+    </center>
 
       
 </aside>

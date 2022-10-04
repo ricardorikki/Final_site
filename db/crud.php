@@ -158,6 +158,18 @@
                  return false;
              }
          }
+         public function deleteHire($id){
+            try{
+                 $sql = "delete from hire where hire_id = :id";
+                 $stmt = $this->db->prepare($sql);
+                 $stmt->bindparam(':id', $id);
+                 $stmt->execute();
+                 return true;
+             }catch (PDOException $e) {
+                 echo $e->getMessage();
+                 return false;
+             }
+         }
 
          public function getSpecialtyById($id){
             try{
