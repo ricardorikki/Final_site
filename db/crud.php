@@ -96,7 +96,20 @@
                  return false;
              }
          }
-
+         public function getHireDetails($id){
+            try{
+                 $sql = "select * from hire  
+                 where hire_id = :id";
+                 $stmt = $this->db->prepare($sql);
+                 $stmt->bindparam(':id', $id);
+                 $stmt->execute();
+                 $result = $stmt->fetch();
+                 return $result;
+            }catch (PDOException $e) {
+                 echo $e->getMessage();
+                 return false;
+             }
+         }
 
          public function editAttendee($id,$fname, $lname, $dob, $email,$contact,$specialty){
             try{ 

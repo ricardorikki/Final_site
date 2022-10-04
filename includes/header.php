@@ -43,7 +43,7 @@
           <?php } else { ?>
             
             <a class="nav-item nav-link" href="viewrecords.php">View Records <span class="sr-only"></span></a>
-            <a class="nav-item nav-link" href="viewhire.php">View Hires <span class="sr-only"></span></a>
+            <a class="nav-item nav-link" href="viewhirerecord.php">View Hires <span class="sr-only"></span></a>
             <a class="nav-item nav-link" href="logout.php">Logout <span class="sr-only"></span></a>
           <?php } ?>
                 </ul>
