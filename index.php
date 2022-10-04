@@ -174,7 +174,13 @@ require_once 'db/conn.php';
             </div>
         </div>
     </section>
-    
+    <!--Hire Me-->
+    <section class="text-white bg-primary" style="background: linear-gradient(rgb(0,175,240) 100%, white 100%), rgb(0,175,240); height:14px;">
+        <div class="container text-center">
+           
+               <a class="btn btn-light btn-xl sr-button" role="button" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" href="hireme.php">Hire Me!</a>
+        </div>
+    </section>
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -189,7 +195,7 @@ require_once 'db/conn.php';
                     <p>876-409-1799</p>
                 </div>
                 <div class="col-lg-4 text-center me-auto"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
-                    <p><a href="mailto:your-email@your-domain.com">ricardo.o.knight@gmail.com</a></p>
+                    <p><a href="mailto:ricardo.o.knight@gmail.com">ricardo.o.knight@gmail.com</a></p>
                 </div>
             </div>
         </div>

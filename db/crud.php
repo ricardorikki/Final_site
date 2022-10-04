@@ -34,9 +34,45 @@
             }
         }
 
+         //function to insert a new record into the attendee database
+         public function insertHireMe($FirstName, $LastName, $email,$contact,$comment){
+            try {
+                // define sql statement to be executed
+                $sql = "INSERT INTO hire (FirstName,LastName,email,contact,comment) VALUES (:FirstName,:LastName,:email,:contact,:comment)";
+                //prepare the sql statement for execution
+                $stmt = $this->db->prepare($sql);
+                // bind all placeholders to the actual values
+                $stmt->bindparam(':FirstName',$FirstName);
+                $stmt->bindparam(':LastName',$LastName);
+                $stmt->bindparam(':email',$email);
+                $stmt->bindparam(':contact',$contact);
+                $stmt->bindparam(':comment',$comment);
+
+                // execute statement
+                $stmt->execute();
+                return true;
+        
+            } catch (PDOException $e) {
+                echo $e->getMessage();
+                return false;
+            }
+        }
+
         public function getAttendees(){
             try{
                 $sql = "SELECT * FROM `attendee` a inner join specialty s on a.specialty_id = s.specialty_id";
+                $result = $this->db->query($sql);
+                return $result;
+            }catch (PDOException $e) {
+                echo $e->getMessage();
+                return false;
+           }
+           
+        }
+
+        public function getHireMe(){
+            try{
+                $sql = "SELECT * FROM `hire`";
                 $result = $this->db->query($sql);
                 return $result;
             }catch (PDOException $e) {

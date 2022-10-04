@@ -33,6 +33,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hireme.php">Hire Me</a></li>
                     
 
 <?php 
@@ -42,6 +43,7 @@
           <?php } else { ?>
             
             <a class="nav-item nav-link" href="viewrecords.php">View Records <span class="sr-only"></span></a>
+            <a class="nav-item nav-link" href="viewhire.php">View Hires <span class="sr-only"></span></a>
             <a class="nav-item nav-link" href="logout.php">Logout <span class="sr-only"></span></a>
           <?php } ?>
                 </ul>
