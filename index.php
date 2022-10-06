@@ -19,6 +19,8 @@ require_once 'db/conn.php';
         </div>
     </header> -->
 
+
+
     <header class="masthead">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
@@ -29,7 +31,6 @@ require_once 'db/conn.php';
     </div>
   </div>
 </header>
-
 
     
     <section id="about" class="bg-primary">
